@@ -1,0 +1,9 @@
+services:
+  external-api-simulator:
+    build: .
+    container_name: niocess-external-api-simulator
+    environment:
+      PORT: 8090
+      EXTERNAL_API_DELAY_MS: 500
+    ports:
+      - "8090:8090"
